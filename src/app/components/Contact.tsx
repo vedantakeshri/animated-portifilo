@@ -16,7 +16,7 @@ export default function Contact() {
         Let's Connect
       </h2>
       <p className="text-lg text-gray-700 mb-8">
-        Whether you have a project in mind or just want to say hello, my inbox is always open. Let's build something great together!
+        Whether you have a project in mind or just want to say hello, my inbox is always open. Let&apos;s build something great together!
       </p>
 
       <a
