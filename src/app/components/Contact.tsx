@@ -13,7 +13,7 @@ export default function Contact() {
       className="max-w-2xl mx-auto py-24 px-6 text-center"
     >
       <h2 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-        Let's Connect
+        Let&apos;s Connect
       </h2>
       <p className="text-lg text-gray-700 mb-8">
         Whether you have a project in mind or just want to say hello, my inbox is always open. Let&apos;s build something great together!
