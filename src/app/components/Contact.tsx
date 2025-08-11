@@ -468,9 +468,8 @@
 
 "use client";
 
-import { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import { useState } from 'react';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -480,13 +479,7 @@ export default function Contact() {
   });
 
   // Initialize AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // Animation duration in milliseconds
-      easing: 'ease-in-out', // Easing function
-      once: true, // Animation happens only once on scroll
-    });
-  }, []);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();

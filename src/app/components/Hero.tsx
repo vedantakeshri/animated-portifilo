@@ -271,12 +271,10 @@
 
 
 
-"use client";
+
 
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 
 export default function Hero() {
   const scrollToSection = (href: string) => {
@@ -287,12 +285,7 @@ export default function Hero() {
   };
 
   // Initialize AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // animation duration
-      once: true,    // run only once
-    });
-  }, []);
+
 
   return (
     <section id="hero" className="hero">
