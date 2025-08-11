@@ -376,9 +376,9 @@ export default function About() {
             books, toys, and fashion.
           </p> */}
 <p className="section-description">
-  I'm a frontend developer with a strong foundation in React.js and Next.js, 
+  I&apos;m a frontend developer with a strong foundation in React.js and Next.js, 
   passionate about creating responsive, modern websites that are optimized for 
-  speed, accessibility, and SEO. While I'm early in my professional journey, 
+  speed, accessibility, and SEO. While I&apos;m early in my professional journey, 
   I’m constantly building personal projects to refine my skills and stay updated 
   with the latest web technologies.
 </p>
@@ -417,13 +417,13 @@ export default function About() {
                 in backend technologies allows me to understand the full development cycle.
               </p>
               <p>
-                Simultaneously, I've developed expertise in content writing across 
+                Simultaneously, I&apos;ve developed expertise in content writing across 
                 diverse niches including literature, toy industry, and fashion. This 
                 unique combination allows me to create both technically sound and 
                 compelling user experiences.
               </p>
               <p>
-                I'm passionate about creating solutions that not only work flawlessly 
+                I&apos;m passionate about creating solutions that not only work flawlessly 
                 but also engage users through thoughtful design and compelling content.
               </p>
             </div>

@@ -508,7 +508,7 @@ export default function Contact() {
           <h2 className="section-title">Get In Touch</h2>
           <div className="section-divider"></div>
           <p className="section-description">
-            Ready to start your next project? Let's discuss how I can help bring your ideas to life.
+            Ready to start your next project? Let&apos;s discuss how I can help bring your ideas to life.
           </p>
         </div>
 
@@ -581,8 +581,8 @@ export default function Contact() {
               </div>
               <div className="contact-details">
                 <div className="contact-title">Email</div>
-                <a href="mailto:alex.chen@example.com" className="contact-value">
-                  alex.chen@example.com
+                <a href="mailto:vedantakeshri@gmail.com" className="contact-value">
+                  vedantakeshri@gmail.com
                 </a>
               </div>
             </div>

@@ -315,7 +315,7 @@ export default function Hero() {
           {/* Title */}
           <div data-aos="fade-up">
             <h1 className="hero-title">
-              <span>Hi, I'm </span>
+              <span>Hi, I&apos;m </span>
               <span className="animated-text">
                 {"Vedanta Keshri".split("").map((char, i) => (
                   <span key={i} style={{ animationDelay: `${i * 0.1}s` }}>
