@@ -384,7 +384,7 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="hero-stats" data-aos="fade-up" data-aos-delay="800">
+          {/* <div className="hero-stats" data-aos="fade-up" data-aos-delay="800">
             <div className="hero-stat">
               <div className="hero-stat-number">1+</div>
               <div className="hero-stat-label">Years Experience</div>
@@ -397,7 +397,7 @@ export default function Hero() {
               <div className="hero-stat-number">100%</div>
               <div className="hero-stat-label">Client Satisfaction</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

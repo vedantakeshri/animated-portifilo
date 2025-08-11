@@ -265,16 +265,10 @@
 "use client";
 
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 export default function About() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // Animation duration in ms
-      once: true,    // Run only once
-    });
-  }, []);
+
 
   // const skills = [
   //   {
