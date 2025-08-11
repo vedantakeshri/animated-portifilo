@@ -149,13 +149,22 @@ export default function Navbar() {
     { name: 'Contact', href: '#contact' },
   ];
 
-  const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false);
-  };
+  // const scrollToSection = (href) => {
+  //   const element = document.querySelector(href);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  //   setIsOpen(false);
+  // };
+
+  const scrollToSection = (href: string) => {
+  const element = document.querySelector<HTMLElement>(href);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+  setIsOpen(false);
+};
+
 
   return (
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>

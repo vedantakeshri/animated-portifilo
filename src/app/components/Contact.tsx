@@ -481,13 +481,20 @@ export default function Contact() {
   // Initialize AOS
 
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", message: "" });
-  };
+  // const handleSubmit = (e=>any) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted:", formData);
+  //   setFormData({ name: "", email: "", message: "" });
+  // };
 
-  const handleChange = (e) => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  console.log("Form submitted:", formData);
+  setFormData({ name: "", email: "", message: "" });
+};
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
