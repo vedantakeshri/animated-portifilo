@@ -467,7 +467,7 @@ const Hero = () => {
         <div className="hero-text">
           <div className="space-y-8">
             <div className="space-y-4">
-              <p className="text-lg text-blue-400 font-medium">Hello, I'm</p>
+              <p className="text-lg text-blue-400 font-medium">Hello, I&apos;m</p>
               <h1 className="hero-title">
                 Vedanta Keshri
               </h1>

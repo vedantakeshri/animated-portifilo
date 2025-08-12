@@ -37,7 +37,7 @@ const About = () => {
               <h3 className="text-2xl font-bold text-white">My Journey</h3>
               <p className="text-gray-300">
                 With <span className="text-blue-400 font-semibold">1 year of dedicated experience</span> in frontend development, 
-                I've immersed myself in the world of modern web technologies. My journey began with a fascination for 
+                I&apos;ve immersed myself in the world of modern web technologies. My journey began with a fascination for 
                 creating beautiful, functional user interfaces that solve real-world problems.
               </p>
               <p className="text-gray-300">

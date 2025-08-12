@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, MessageSquare, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MessageSquare, Send, Github, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -46,10 +46,10 @@ const Contact = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p className="section-description">
-            Ready to bring your next project to life? I'd love to hear about your ideas and discuss how we can work together.
+            Ready to bring your next project to life? I&apos;d love to hear about your ideas and discuss how we can work together.
           </p>
         </div>
 
@@ -59,8 +59,8 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold text-white" style={{ marginBottom: '1.5rem' }}>Get In Touch</h3>
               <p className="text-gray-300" style={{ marginBottom: '1.5rem' }}>
-                I'm always interested in discussing new opportunities, collaborations, 
-                and challenging projects. Whether you're looking for a frontend developer 
+                I&apos;m always interested in discussing new opportunities, collaborations, 
+                and challenging projects. Whether you&apos;re looking for a frontend developer 
                 or just want to say hello, feel free to reach out!
               </p>
             </div>
