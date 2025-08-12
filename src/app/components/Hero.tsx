@@ -500,7 +500,7 @@ const Hero = () => {
                 <Github size={24} />
               </a>
               <a 
-                href="www.linkedin.com/in/vedanta-keshri-35b0a0212" 
+                href="https://www.linkedin.com/in/vedanta-keshri-35b0a0212/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
