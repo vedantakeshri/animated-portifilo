@@ -8,7 +8,6 @@ import {
   Github,
   Linkedin,
   MessageSquare,
-  Phone,
   Sparkles,
   MapPin,
   ArrowUpRight,
