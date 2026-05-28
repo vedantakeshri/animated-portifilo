@@ -1,521 +1,292 @@
-// export default function Hero() {
-//   return (
-//     <section
-//       id="hero"
-//       className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 text-center px-4"
-//     >
-//       <img
-//         src="/profile.jpg"
-//         alt="Vedanta Keshri - Frontend Developer"
-//         className="w-40 h-40 rounded-full shadow-lg mb-6 border-4 border-white fade-in"
-//       />
-
-//       <h1 className="text-4xl md:text-5xl font-bold mb-4 typing">
-//         Hi, I'm Vedanta Keshri 👋
-//       </h1>
-
-//       <p className="text-lg text-gray-600 max-w-xl fade-in delay-1">
-//         Frontend Developer with 1 year of experience in React.js, Next.js, and Laravel.
-//         I create fast, responsive, and beautiful web applications.
-//       </p>
-
-//       <div className="flex space-x-4 mt-6 fade-in delay-2">
-//         <a
-//           href="#projects"
-//           className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:shadow-xl transform hover:scale-105 transition"
-//         >
-//           View My Work
-//         </a>
-//         <a
-//           href="/Vedanta_Keshri_Resume.pdf"
-//           download
-//           className="px-6 py-3 bg-gray-800 text-white rounded-lg shadow hover:shadow-xl transform hover:scale-105 transition"
-//         >
-//           Download Resume
-//         </a>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// "use client";
-
-// import { Button } from "@/components/ui/button";
-// import { ArrowRight, Download } from "lucide-react";
-// // import heroImage from "@/assets/hero-image.jpg";
-
-// const Hero = () => {
-//   const scrollToSection = (href: string) => {
-//     const element = document.querySelector(href);
-//     if (element) {
-//       element.scrollIntoView({ behavior: "smooth" });
-//     }
-//   };
-
-//   return (
-//     <section
-//       id="hero"
-//       className="min-h-screen flex items-center justify-center relative overflow-hidden"
-//     >
-//       {/* Background with overlay */}
-//       <div className="absolute inset-0 z-0">
-//         {/* <img
-//           src={heroImage}
-//           alt="Hero background"
-//           className="w-full h-full object-cover"
-//         /> */}
-//         <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90" />
-//       </div>
-
-//       {/* Content */}
-//       <div className="container mx-auto px-4 z-10">
-//         <div className="text-center max-w-4xl mx-auto">
-//           <div className="animate-fade-in">
-//             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-//               <span className="text-foreground">Hi, I'm </span>
-//               <span className="bg-gradient-primary bg-clip-text text-transparent">
-//                 Alex Chen
-//               </span>
-//             </h1>
-//             <h2 className="text-2xl md:text-3xl font-semibold text-foreground-muted mb-8">
-//               Frontend Developer & Creative Content Writer
-//             </h2>
-//             <p className="text-lg md:text-xl text-foreground-muted mb-12 max-w-2xl mx-auto leading-relaxed">
-//               I craft beautiful, responsive web experiences with React.js and Next.js, 
-//               while creating compelling content for books, toys, and fashion brands.
-//             </p>
-//           </div>
-
-//           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
-//             <Button
-             
-//               onClick={() => scrollToSection("#contact")}
-//               className="group"
-//             >
-//               Hire Me
-//               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-//             </Button>
-//             <Button
-//               variant="outline"
-              
-//               onClick={() => scrollToSection("#portfolio")}
-//             >
-//               <Download className="mr-2 h-5 w-5" />
-//               View Work
-//             </Button>
-//           </div>
-
-//           {/* Stats */}
-//           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 animate-scale-in">
-//             <div className="text-center">
-//               <div className="text-3xl font-bold text-primary mb-2">1+</div>
-//               <div className="text-foreground-muted">Years Experience</div>
-//             </div>
-//             <div className="text-center">
-//               <div className="text-3xl font-bold text-primary mb-2">20+</div>
-//               <div className="text-foreground-muted">Projects Completed</div>
-//             </div>
-//             <div className="text-center">
-//               <div className="text-3xl font-bold text-primary mb-2">100%</div>
-//               <div className="text-foreground-muted">Client Satisfaction</div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Scroll Indicator */}
-//       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-//         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-//           <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// "use client"
-
-// import Image from 'next/image';
-
-// export default function Hero() {
-//   const scrollToSection = (href) => {
-//     const element = document.querySelector(href);
-//     if (element) {
-//       element.scrollIntoView({ behavior: 'smooth' });
-//     }
-//   };
-
-//   return (
-//     <section id="hero" className="hero">
-//       {/* Background with overlay */}
-//       <div className="hero-background">
-//         <Image
-//           src="/hero-image.jpg"
-//           alt="Hero background - Modern workspace with laptop and design elements"
-//           fill
-//           className="hero-image"
-//           priority
-//           sizes="100vw"
-//         />
-//         <div className="hero-overlay" />
-//       </div>
-
-//       {/* Content */}
-//       <div className="container">
-//         <div className="hero-content">
-//           <div className="animate-fade-in">
-//             <h1 className="hero-title">
-//               <span>Hi, I'm </span>
-//               {/* <span className="text-gradient">Vedanta Keshri</span> */}
-// <span className="animated-text">
-//   {"Vedanta Keshri".split("").map((char, i) => (
-//     <span key={i} style={{ animationDelay: `${i * 0.1}s` }}>
-//       {char === " " ? "\u00A0" : char}
-//     </span>
-//   ))}
-// </span>
-//             </h1>
-//             <h2 className="hero-subtitle">
-//               Frontend Developer
-//             </h2>
-//             <p className="hero-description">
-//               I craft beautiful, responsive web experiences with React.js and Next.js.
-//             </p>
-//           </div>
-
-//           <div className="hero-buttons animate-slide-up">
-//             <button
-//               className="btn btn-primary btn-xl"
-//               onClick={() => scrollToSection('#contact')}
-//             >
-//               Hire Me
-//               <svg className="ml-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-//                 <line x1="5" y1="12" x2="19" y2="12"></line>
-//                 <polyline points="12,5 19,12 12,19"></polyline>
-//               </svg>
-//             </button>
-//             <button
-//               className="btn btn-outline btn-xl"
-//               onClick={() => scrollToSection('#portfolio')}
-//             >
-//               <svg className="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-//                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-//                 <polyline points="7,10 12,15 17,10"></polyline>
-//                 <line x1="12" y1="15" x2="12" y2="3"></line>
-//               </svg>
-//               View Work
-//             </button>
-//           </div>
-
-//           {/* Stats */}
-//           <div className="hero-stats animate-scale-in">
-//             <div className="hero-stat">
-//               <div className="hero-stat-number">1+</div>
-//               <div className="hero-stat-label">Years Experience</div>
-//             </div>
-//             <div className="hero-stat">
-//               <div className="hero-stat-number">20+</div>
-//               <div className="hero-stat-label">Projects Completed</div>
-//             </div>
-//             <div className="hero-stat">
-//               <div className="hero-stat-number">100%</div>
-//               <div className="hero-stat-label">Client Satisfaction</div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Scroll Indicator */}
-//       <div className="hero-scroll-indicator">
-//         <div className="hero-scroll-mouse">
-//           <div className="hero-scroll-dot"></div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-
-// "use client"
-
-// import Image from "next/image";
-
-
-// export default function Hero() {
-//   const scrollToSection = (href: string) => {
-//     const element = document.querySelector(href);
-//     if (element) {
-//       element.scrollIntoView({ behavior: "smooth" });
-//     }
-//   };
-
-//   // Initialize AOS
-
-
-//   return (
-//     <section id="hero" className="hero">
-//       {/* Background with overlay */}
-//       <div className="hero-background">
-//         <Image
-//           src="/hero-image.jpg"
-//           alt="Hero background - Modern workspace with laptop and design elements"
-//           fill
-//           className="hero-image"
-//           priority
-//           sizes="100vw"
-//         />
-//         <div className="hero-overlay" />
-//       </div>
-
-//       {/* Content */}
-//       <div className="container">
-//         <div className="hero-content">
-//           {/* Title */}
-//           <div data-aos="fade-up">
-//             <h1 className="hero-title">
-//               <span>Hi, I&apos;m </span>
-//               <span className="animated-text">
-//                 {"Vedanta Keshri".split("").map((char, i) => (
-//                   <span key={i} style={{ animationDelay: `${i * 0.1}s` }}>
-//                     {char === " " ? "\u00A0" : char}
-//                   </span>
-//                 ))}
-//               </span>
-//             </h1>
-//             <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-//               Frontend Developer
-//             </h2>
-//             <p className="hero-description" data-aos="fade-up" data-aos-delay="400">
-//               I craft beautiful, responsive web experiences with React.js and Next.js.
-//             </p>
-//           </div>
-
-//           {/* Buttons */}
-//           <div className="hero-buttons" data-aos="zoom-in" data-aos-delay="600">
-//             <button
-//               className="btn btn-primary btn-xl"
-//               onClick={() => scrollToSection("#contact")}
-//             >
-//               Hire Me
-//               <svg className="ml-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-//                 <line x1="5" y1="12" x2="19" y2="12"></line>
-//                 <polyline points="12,5 19,12 12,19"></polyline>
-//               </svg>
-//             </button>
-//             {/* <button
-//               className="btn btn-outline btn-xl"
-//               onClick={() => scrollToSection("#portfolio")}
-//             >
-//               <svg className="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-//                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-//                 <polyline points="7,10 12,15 17,10"></polyline>
-//                 <line x1="12" y1="15" x2="12" y2="3"></line>
-//               </svg>
-//               View Work
-//             </button> */}
-
-//             <button
-//   className="btn btn-outline btn-xl"
-//   onClick={() => {
-//     const link = document.createElement("a");
-//     link.href = "/resume.pdf"; // Path in public folder
-//     link.download = "Vedanta_Keshri_Resume.pdf"; // File name for download
-//     link.click();
-//   }}
-// >
-//   <svg
-//     className="mr-2"
-//     width="20"
-//     height="20"
-//     viewBox="0 0 24 24"
-//     fill="none"
-//     stroke="currentColor"
-//     strokeWidth="2"
-//   >
-//     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-//     <polyline points="7,10 12,15 17,10"></polyline>
-//     <line x1="12" y1="15" x2="12" y2="3"></line>
-//   </svg>
-//   Download CV
-// </button>
-
-//           </div>
-
-//           {/* Stats */}
-//           {/* <div className="hero-stats" data-aos="fade-up" data-aos-delay="800">
-//             <div className="hero-stat">
-//               <div className="hero-stat-number">1+</div>
-//               <div className="hero-stat-label">Years Experience</div>
-//             </div>
-//             <div className="hero-stat">
-//               <div className="hero-stat-number">20+</div>
-//               <div className="hero-stat-label">Projects Completed</div>
-//             </div>
-//             <div className="hero-stat">
-//               <div className="hero-stat-number">100%</div>
-//               <div className="hero-stat-label">Client Satisfaction</div>
-//             </div>
-//           </div> */}
-//         </div>
-//       </div>
-
-//       {/* Scroll Indicator */}
-//       <div className="hero-scroll-indicator" data-aos="fade-down" data-aos-delay="1000">
-//         <div className="hero-scroll-mouse">
-//           <div className="hero-scroll-dot"></div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 'use client';
 
-import { useState, useEffect } from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { useEffect, useState } from 'react';
+
+import {
+  ArrowRight,
+  Briefcase,
+  ChevronDown,
+  Download,
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  Sparkles,
+} from 'lucide-react';
 
 const Hero = () => {
-  const [currentText, setCurrentText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  
-  const texts = ['Frontend Developer', 'React.js', 'Next.js', 'web developer'];
+  const roles = [
+    'Frontend Developer',
+    'React.js Developer',
+    'Next.js Developer',
+    'UI Engineer',
+  ];
+
+  const [text, setText] = useState('');
+  const [index, setIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      const current = texts[currentIndex];
-      
-      if (!isDeleting) {
-        if (currentText.length < current.length) {
-          setCurrentText(current.slice(0, currentText.length + 1));
+    const current = roles[index];
+
+    const timeout = setTimeout(
+      () => {
+        if (!deleting) {
+          setText(current.substring(0, text.length + 1));
+
+          if (text === current) {
+            setTimeout(() => setDeleting(true), 1200);
+          }
         } else {
-          setTimeout(() => setIsDeleting(true), 2000);
+          setText(current.substring(0, text.length - 1));
+
+          if (text === '') {
+            setDeleting(false);
+            setIndex((prev) => (prev + 1) % roles.length);
+          }
         }
-      } else {
-        if (currentText.length > 0) {
-          setCurrentText(current.slice(0, currentText.length - 1));
-        } else {
-          setIsDeleting(false);
-          setCurrentIndex((prev) => (prev + 1) % texts.length);
-        }
-      }
-    }, isDeleting ? 50 : 100);
+      },
+      deleting ? 40 : 90
+    );
 
     return () => clearTimeout(timeout);
-  }, [currentText, currentIndex, isDeleting, texts]);
+  }, [text, deleting, index, roles]);
 
   return (
-    <section id="home" className="hero">
-      {/* Animated background elements */}
-      <div className="hero-bg">
-        <div className="hero-bg-element"></div>
-        <div className="hero-bg-element"></div>
-        <div className="hero-bg-element"></div>
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center overflow-hidden px-6 pt-28"
+    >
+      {/* Background */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:45px_45px]" />
+
+        {/* Blur */}
+        <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
+
+        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
+
+        <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-500/10 blur-3xl" />
       </div>
 
-      <div className="hero-content">
-        <div className="hero-text">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <p className="text-lg text-blue-400 font-medium">Hello, I&apos;m</p>
-              <h1 className="hero-title">
-                Vedanta Keshri
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-2">
+        {/* LEFT */}
+        <div>
+          {/* Tag */}
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-5 py-2 text-sm font-medium text-blue-400 backdrop-blur-xl">
+            <Sparkles size={16} />
+            Open to Frontend Developer Opportunities
+          </div>
+
+          {/* Heading */}
+          <div className="space-y-6">
+            <div>
+              <p className="mb-3 text-lg text-gray-400">
+                Hello, I&apos;m
+              </p>
+
+              <h1 className="text-5xl font-black leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+                Vedanta
+                <br />
+
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                  Keshri
+                </span>
               </h1>
-              <div className="hero-subtitle">
-                <span>{currentText}</span>
-                <span style={{ animation: 'pulse 1s infinite' }}>|</span>
+            </div>
+
+            {/* Typing */}
+            <div className="flex h-12 items-center">
+              <h2 className="text-2xl font-semibold text-gray-200 sm:text-3xl">
+                {text}
+                <span className="animate-pulse text-blue-400">
+                  |
+                </span>
+              </h2>
+            </div>
+          </div>
+
+          {/* Description */}
+          <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-400">
+            Frontend Developer with experience building modern SaaS
+            dashboards, CRM systems, trading platforms, and scalable
+            web applications using React.js, Next.js, Tailwind CSS,
+            and TypeScript.
+          </p>
+
+          {/* Info Pills */}
+          <div className="mt-8 flex flex-wrap gap-4">
+            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm text-gray-300 backdrop-blur-md">
+              <MapPin size={16} />
+              Jaipur, India
+            </div>
+
+            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm text-gray-300 backdrop-blur-md">
+              <Briefcase size={16} />
+              1 Year Experience
+            </div>
+
+            <div className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-5 py-3 text-sm text-emerald-400">
+              Available Immediately
+            </div>
+          </div>
+
+          {/* Buttons */}
+          <div className="mt-10 flex flex-wrap gap-5">
+            <a
+              href="#projects"
+              className="group inline-flex items-center gap-2 rounded-2xl bg-blue-500 px-7 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-blue-600"
+            >
+              View Projects
+
+              <ArrowRight
+                size={18}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </a>
+
+            <a
+              href="/Vedanta_Keshri_Frontend_Laravel_Developer_Resume.pdf"
+              download
+              className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-7 py-4 font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-blue-400 hover:bg-blue-500/10"
+            >
+              <Download size={18} />
+              Download Resume
+            </a>
+          </div>
+
+          {/* Social */}
+          <div className="mt-10 flex items-center gap-5">
+            {[
+              {
+                icon: <Github size={22} />,
+                href: 'https://github.com/vedantakeshri',
+              },
+
+              {
+                icon: <Linkedin size={22} />,
+                href: 'https://www.linkedin.com/in/vedanta-keshri-35b0a0212/',
+              },
+
+              {
+                icon: <Mail size={22} />,
+                href: 'mailto:vedantakeshri@gmail.com',
+              },
+            ].map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-2xl border border-white/10 bg-white/5 p-4 text-gray-300 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:bg-blue-500/10 hover:text-white"
+              >
+                <div className="transition-transform duration-300 group-hover:scale-110">
+                  {item.icon}
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Stats */}
+          <div className="mt-14 grid grid-cols-3 gap-5">
+            {[
+              {
+                value: '10+',
+                label: 'Projects Built',
+              },
+
+              {
+                value: '1+',
+                label: 'Years Experience',
+              },
+
+              {
+                value: '100%',
+                label: 'Responsive UI',
+              },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl"
+              >
+                <h3 className="text-3xl font-black text-white">
+                  {item.value}
+                </h3>
+
+                <p className="mt-2 text-sm text-gray-400">
+                  {item.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* RIGHT */}
+        <div className="relative hidden lg:flex items-center justify-center">
+          <div className="relative w-full max-w-lg rounded-[36px] border border-white/10 bg-white/5 p-8 backdrop-blur-2xl">
+            {/* Glow */}
+            <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl" />
+
+            {/* Header */}
+            <div className="mb-8 flex items-center justify-between border-b border-white/10 pb-5">
+              <div>
+                <h3 className="text-2xl font-bold text-white">
+                  Frontend Stack
+                </h3>
+
+                <p className="mt-1 text-sm text-gray-400">
+                  Technologies I work with
+                </p>
+              </div>
+
+              <div className="flex gap-2">
+                <span className="h-3 w-3 rounded-full bg-red-400" />
+                <span className="h-3 w-3 rounded-full bg-yellow-400" />
+                <span className="h-3 w-3 rounded-full bg-green-400" />
               </div>
             </div>
-            
-            <p className="hero-description">
-              Passionate frontend developer with 1 year of experience crafting modern, 
-              responsive web applications using cutting-edge technologies.
-            </p>
-            
-            <div className="hero-buttons">
-              <a href="#projects" className="btn btn-primary btn-lg">
-                View My Work
-              </a>
-              <a href="#contact" className="btn btn-outline btn-lg">
-                Get In Touch
-              </a>
+
+            {/* Tech */}
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                'React.js',
+                'Next.js',
+                'Tailwind CSS',
+                'TypeScript',
+                'JavaScript',
+                'Laravel',
+                'REST APIs',
+                'Git & GitHub',
+              ].map((tech) => (
+                <div
+                  key={tech}
+                  className="rounded-2xl border border-white/10 bg-black/20 px-5 py-4 text-center text-sm font-medium text-gray-200 transition-all duration-300 hover:border-blue-400 hover:bg-blue-500/10"
+                >
+                  {tech}
+                </div>
+              ))}
             </div>
-            
-            <div className="hero-social">
-              <a 
-                href="https://github.com/vedantakeshri" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <Github size={24} />
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/vedanta-keshri-35b0a0212/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <Linkedin size={24} />
-              </a>
-              <a href="mailto:vedantakeshri@gmail.com">
-                <Mail size={24} />
-              </a>
+
+            {/* Bottom Card */}
+            <div className="mt-8 rounded-3xl border border-blue-500/20 bg-blue-500/10 p-6">
+              <h4 className="text-lg font-semibold text-white">
+                Current Focus
+              </h4>
+
+              <p className="mt-3 leading-7 text-gray-300">
+                Building scalable SaaS dashboards, Trading platforms,
+                CRM systems, and high-performance frontend
+                applications with modern UI architecture.
+              </p>
             </div>
           </div>
         </div>
-        
-        <div className="hero-scroll">
-          <ChevronDown size={32} className="text-gray-400" />
-        </div>
+      </div>
+
+      {/* Scroll */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <ChevronDown size={30} className="text-gray-500" />
       </div>
     </section>
   );
